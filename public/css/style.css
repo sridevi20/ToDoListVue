@@ -1,0 +1,21 @@
+input[type="text"] {
+	padding: 10px;
+  margin-top: 20px;
+	width: 50%;
+
+}
+span {
+
+  margin-right: -15px;
+
+}
+
+
+
+li:nth-of-type(even) {
+  border-color: #7D3C98    ;
+}
+
+li:nth-of-type(odd) {
+  border-color: #5DADE2    ;
+}

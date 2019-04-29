@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Vue</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="./js/bundle.js"></script>
+    <h1>ToDo's</h1>
+  </head>
+  <body>
+    <div id="app">
+
+      <form class="form-element" >
+        <input type="text" v-model="newItem"/>
+        <input type="radio" id="high"value="high">HIGH</>
+        <input type="radio" id="low"value="low">LOW</>
+        <button @click="saveItemList">Save Item</button>
+
+
+        <ul>
+          <li v-for="item in items">
+
+            <input type="text"  v-model="item.name" />
+          </li>
+
+         </ul>
+         <!-- <input type="text" v-if="newItem.high" @click="addList(index)"/> -->
+
+
+      </form>
+    </div>
+
+  </body>
+</html>
